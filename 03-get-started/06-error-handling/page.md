@@ -5,7 +5,7 @@ title: Error Handling
 Things can go wrong during a Slim Framework application lifecycle. These errors
 can be divided into two primary categories.
 
-## 404 Not Found
+## 404 Not Found Errors
 
 The **Not Found** error occurs when a user-requested URL cannot be answered by
 a matching Slim Framework application route. In this case, the Slim Framework application
