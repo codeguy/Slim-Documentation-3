@@ -44,6 +44,8 @@ Here are a few additional resources to help you learn and use the Slim Framework
 
 ## Sponsors
 
+### [New Media Campaigns][nmc]
+
 The Slim Framework is proudly sponsored by [New Media Campaigns][nmc], a full-service, award-winning
 web design, development, and marketing agency in Carrboro, North Carolina. The Slim Framework was
 created by Josh Lockhart at New Media Campaigns to build projects easier and faster. Josh continues
