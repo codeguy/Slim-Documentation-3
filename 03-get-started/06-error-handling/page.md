@@ -44,12 +44,12 @@ anticipate and handle these unexpected errors.
 
 Slim's default **System Error** handler will send a `HTTP/1.1 500` response with a simple
 response body that reads "Something went wrong". You are encouraged to override the
-default "System Error" handler with your own custom handler.
+default **System Error** handler with your own custom handler.
 
 To register a custom **System Error** handler, use the Slim Framework application instance's
 `error` method. The method argument should be an invokable object or anything that
-returns `true` for `is_callable()`. The argument value will receive the Exception instance
-as its single argument if and when it is invoked.
+returns `true` for `is_callable()`. The callable/invokable will receive an
+`\Exception` instance as its single argument if and when it is invoked.
 
 ### Debug Mode
 
@@ -80,9 +80,9 @@ error handler and act appropriately.
 
     $app->run();
 
-In this example, we register a custom **System Error** handler that will render a more
-appropriate and user-friendly error template. The **System Error** handler
-is the same as a route callback: it should `echo` content to the current
+In this example, we register a custom **System Error** handler that will render a stacktrace
+in debug mode, or a client-friendly error template if not in debug mode. The **System Error**
+handler is the same as a route callback: it should `echo` content to the current
 output buffer. This content will be captured and appended to the Slim Framework
 application response object. The response object's status will automatically
 be set to `500`.
