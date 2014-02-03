@@ -15,7 +15,7 @@ Slim's default **Not Found** handler will send a `HTTP/1.1 404` response
 with a simple repsonse body that reads "Page Not Found". You are encouraged to override
 the default **Not Found** handler with your own custom handler.
 
-To register a custom "Not Found" handler, use the Slim Framework application instance's
+To register a custom **Not Found** handler, use the Slim Framework application instance's
 `notFound()` method. The method argument should be an invokable object or anything
 that returns `true` for `is_callable()`.
 
