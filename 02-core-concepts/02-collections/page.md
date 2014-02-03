@@ -7,9 +7,9 @@ title: Collections
 Many Slim Framework components share a common feauture: they may contain a collection of
 child objects that may be set or retrieved by you, the developer. Examples include:
 
-    * `\Slim\View`
-    * `\Slim\Http\Cookies`
-    * `\Slim\Http\Headers`
+* `\Slim\View`
+* `\Slim\Http\Cookies`
+* `\Slim\Http\Headers`
 
 Each collection-like class extends `\Slim\Collection` to ensure it provides the same standardized
 methods to manage its collection of child objects. This makes your life as an application developer
